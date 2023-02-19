@@ -1,0 +1,2 @@
+baldertest>=0.1.0b3
+pysnmp>=4.4.12

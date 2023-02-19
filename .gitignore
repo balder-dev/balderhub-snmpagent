@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#project specific
+/src/balderhub/snmpagent/_version.py
