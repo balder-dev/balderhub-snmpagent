@@ -15,12 +15,17 @@ class ScenarioMibSysUpTime(balder.Scenario):
     @balder.connect('SnmpManager', over_connection=SnmpConnection())
     class SnmpAgent(balder.Device):
         """the remote snmp agent device"""
+        #: autonomous feature of type :class:`HasSnmpSystemGroupFeature` to define that this device is able to handle
+        #: SNMP messages of group `system`
         _snmp_sys = features.HasSnmpSystemGroupFeature()
+        #: general configuration from type :class:`SnmpSystemConfig`
         snmp_system_config = features.SnmpSystemConfig()
 
     class SnmpManager(balder.Device):
         """the snmp manager device"""
+        #: feature of type :class:`SendSnmpGetRequestCommandFeature` which allows sending SNMP GET REQUEST messages
         snmp_send_get = features.SendSnmpGetRequestCommandFeature(SnmpAgent="SnmpAgent")
+        #: feature of type :class:`SendSnmpSetRequestCommandFeature` which allows sending SNMP SET REQUEST messages
         snmp_send_set = features.SendSnmpSetRequestCommandFeature(SnmpAgent="SnmpAgent")
 
     def _verify_response(self, snmp_response: SnmpPackage):
