@@ -6,15 +6,16 @@
 Welcome to BalderHub SNMPAgent's documentation!
 ===============================================
 
+.. todo short introduction into the snmpagent project
+
+.. todo describe what a balderhub project is
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   installation.rst
+   topic_intro.rst
+   scenarios.rst
+   features.rst
+   examples.rst
+   utilities.rst
