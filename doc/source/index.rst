@@ -3,12 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to BalderHub SNMPAgent's documentation!
-===============================================
+BalderHub-SNMPAgent
+===================
 
-.. todo short introduction into the snmpagent project
+The BalderHub SNMPAgent package provides basic tests for testing SNMP Agent devices.
 
-.. todo describe what a balderhub project is
+.. note::
+   Please note, this package is still under development and provides no full test coverage of the RFC's. If you would
+   like to contribute, take a look into the `GitHub project <https://github.com/balder-dev/balderhub-snmpagent>`_.
+
+This is a BalderHub package for the `Balder <https://docs.balder.dev/>`_ test framework. It allows you to test SNMP
+agents, without the need of writing own tests. If you are new to Balder check out the
+`official documentation <https://docs.balder.dev>`_ first.
+
 
 .. toctree::
    :maxdepth: 2
