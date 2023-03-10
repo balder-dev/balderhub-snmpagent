@@ -2,6 +2,10 @@ Features
 ********
 
 
+This section describes all features that are shipped with this package. Specially take a look at the
+`PySNMP setup features <PySNMP setup Features>`, which are ready-to-use setup features, that can directly be used in
+your setup.
+
 Scenario Features
 =================
 
