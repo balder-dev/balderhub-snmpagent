@@ -1,6 +1,8 @@
 Utilities
 *********
 
+This section shows general objects and helper functions that are used with this package.
+
 Base SNMP Package
 =================
 
